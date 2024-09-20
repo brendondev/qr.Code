@@ -3,16 +3,15 @@
 Este projeto é um gerador de QR Codes usando React, Vite, TypeScript e TailwindCSS, com integração da API de geração de QR Codes.
 
 ## 📋 Índice
-- [Descrição](#descrição)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Requisitos](#requisitos)
+- [Descrição](#-descrição)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Requisitos](#-requisitos)
 - [Instalação e Execução](#instalação-e-execução)
-- [API QR Code](#api-qr-code)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Exemplos de Uso](#exemplos-de-uso)
-- [Personalização](#personalização)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
+- [API QR Code](#-api-qr-code)
+- [Exemplos de Uso](#-exemplos-de-uso)
+- [Personalização](#-personalização)
+- [Contribuições](#-contribuições)
+- [Licença](#-licença)
 
 ## 📝 #Descrição
 
