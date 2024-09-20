@@ -42,7 +42,7 @@ Antes de começar, você precisará ter instalado:
 
 1. **Clone este repositório**:
 
-   ```git clone https://github.com/brendondev/qr.Code```
+   <!-- ```git clone https://github.com/brendondev/qr.Code``` -->
 
 2. **Navegue até o diretório do projeto**:
 

@@ -17,8 +17,10 @@ const QRCodeGenerator: React.FC = () => {
 
 	return (
 		<div className="flex flex-col items-center mt-10 border-emerald-400">
-			<h1 className="text-2xl font-bold mb-5">QR Code Generator</h1>
-			<div className="flex space-x-3 mb-5">
+			<h1 className="text-2xl font-bold flex flex-col mb-5">
+				QR Code Generator
+			</h1>
+			<div className="flex flex-row max-md:flex-col gap-4 mb-5">
 				<Input
 					type="text"
 					value={data}
@@ -29,6 +31,7 @@ const QRCodeGenerator: React.FC = () => {
 
 				<Input
 					type="number"
+					className="w-full"
 					disabled
 					value={size}
 					onChange={(e) => setSize(Number(e.target.value))}
