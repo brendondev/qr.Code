@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
+import { Coffee, Heart } from "lucide-react";
 
 const QRCodeGenerator: React.FC = () => {
 	const [data, setData] = useState<string>("");
@@ -16,7 +17,7 @@ const QRCodeGenerator: React.FC = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center mt-10 border-emerald-400">
+		<div className="flex flex-col items-center mt-10 border-emerald-400 h-full">
 			<h1 className="text-2xl font-bold flex flex-col mb-5">
 				QR Code Generator
 			</h1>
@@ -60,6 +61,12 @@ const QRCodeGenerator: React.FC = () => {
 					</p>
 				</div>
 			)}
+			<footer className="absolute inset-x-0 bottom-0">
+				<p className="flex justify-center items-center">
+					Made with <Coffee className="my-2 flex ml-2 mr-2" size={20} />
+					<a href="https://github.com/brendondev">by Brendon</a>
+				</p>
+			</footer>
 		</div>
 	);
 };
