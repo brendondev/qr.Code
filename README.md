@@ -1,50 +1,116 @@
-# React + TypeScript + Vite
+# qr.Code
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um gerador de QR Codes usando React, Vite, TypeScript e TailwindCSS, com integração da API de geração de QR Codes.
 
-Currently, two official plugins are available:
+## 📋 Índice
+- [Descrição](#descrição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Requisitos](#requisitos)
+- [Instalação e Execução](#instalação-e-execução)
+- [API QR Code](#api-qr-code)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Exemplos de Uso](#exemplos-de-uso)
+- [Personalização](#personalização)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 #Descrição
 
-## Expanding the ESLint configuration
+Este é um aplicativo web simples que permite ao usuário gerar QR Codes a partir de texto ou URLs e ajustar o tamanho do QR Code gerado. Ele utiliza a [API de geração de QR Code](https://api.apgy.in/) para criar a imagem QR com base nas entradas do usuário.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **[Vite](https://vitejs.dev/)**: Ferramenta rápida de desenvolvimento para aplicações modernas em frontend.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superconjunto de JavaScript com tipagem estática opcional.
+- **[TailwindCSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização.
+- **[TanStack React Query](https://react-query.tanstack.com/)**: Gerenciamento de estado assíncrono e cache de dados.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ⚙️ Requisitos
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Antes de começar, você precisará ter instalado:
+
+- **Node.js**: v14+ ou superior
+- **npm** ou **yarn**
+
+---
+
+## 🚀 Instalação e Execução
+
+1. **Clone este repositório**:
+
+   ```git clone https://github.com/brendondev/qr.Code```
+
+2. **Navegue até o diretório do projeto**:
+
+   ```cd QR-Code-Generator```
+
+3. **Instale as dependências**:
+
+   ```npm install```
+
+4. **Execute o projeto**:
+
+   ```npm run dev```
+
+5. **Acesse o projeto no navegador**:
+
+  ```http://localhost:5173```
+
+---
+
+## 🌐 API QR Code
+
+A API utilizada para a geração de QR Codes neste projeto é a **API APGY QR Code**.
+
+### Endpoint
+
+```GET https://api.apgy.in/qr/?data={data}&size={size}```
+
+### Parâmetros
+
+- `data` (String): O dado a ser codificado no QR Code. Exemplo: `https://meusite.com`.
+- `size` (Number): O tamanho do QR Code em pixels. Exemplo: `300`.
+
+---
+
+## 📸 Exemplos de Uso
+
+Aqui estão alguns exemplos de uso do QR Code Generator:
+
+Exemplo 1: Gerando QR Code para um site.
+
+Exemplo 2: Gerando QR Code para um texto personalizado.
+
+Substitua com seus prints do QR Code gerado.
+
+---
+
+## ✏️ Personalização
+
+Alterando o tamanho do QR Code
+Para alterar o tamanho do QR Code gerado, o valor padrão é 300, mas você pode ajustá-lo modificando a lógica no componente QRCodeGenerator.tsx:
+
+```const [size, setSize] = useState<number>(300);```
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas! Se você deseja contribuir com melhorias para o projeto, siga estas etapas:
+
+1. Faça um fork do projeto
+2. Crie um branch para sua feature (git checkout -b minha-feature)
+3. Faça o commit de suas alterações (git commit -m 'Adiciona minha feature')
+4. Faça o push para o branch (git push origin minha-feature)
+5. Abra um Pull Request
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
