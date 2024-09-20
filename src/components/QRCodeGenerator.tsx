@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
-import { Coffee, Heart } from "lucide-react";
+import { Coffee } from "lucide-react";
 
 const QRCodeGenerator: React.FC = () => {
 	const [data, setData] = useState<string>("");
@@ -53,7 +53,7 @@ const QRCodeGenerator: React.FC = () => {
 					/>
 					<p className="pt-5 text-slate-300">
 						<span className="pt-5 text-slate-500">
-							You generated a QrCode for:{" "}
+							You generated a QrCode for:{"  "}
 						</span>
 						<a href={data} rel="noreferrer" target="_blank">
 							{data}
