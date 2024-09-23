@@ -81,11 +81,7 @@ A API utilizada para a geração de QR Codes neste projeto é a **API APGY QR Co
 
 Aqui estão alguns exemplos de uso do QR Code Generator:
 
-Exemplo 1: Gerando QR Code para um site.
-
-Exemplo 2: Gerando QR Code para um texto personalizado.
-
-Substitua com seus prints do QR Code gerado.
+...
 
 ---
 
