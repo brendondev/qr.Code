@@ -1,111 +1,95 @@
-# qr.Code
+# qr.Code 👨‍💻
 
-Este projeto é um gerador de QR Codes usando React, Vite, TypeScript e TailwindCSS, com integração da API de geração de QR Codes.
+![image](https://github.com/user-attachments/assets/9d19c94b-55c9-4b0e-8112-350bb6236b2e)
 
-## 📋 Índice
-- [Descrição](#-descrição)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Requisitos](#%EF%B8%8F-requisitos)
-- [Instalação e Execução](#-instala%C3%A7%C3%A3o-e-execu%C3%A7%C3%A3o)
-- [API QR Code](#-api-qr-code)
-- [Exemplos de Uso](#-exemplos-de-uso)
-- [Personalização](#%EF%B8%8F-personaliza%C3%A7%C3%A3o)
-- [Contribuições](#-contribuições)
-- [Licença](#-licença)
 
-## 📝 #Descrição
+This project is a QR Code generator using React, Vite, TypeScript and TailwindCSS, with integration of the QR Code generation API.
 
-Este é um aplicativo web simples que permite ao usuário gerar QR Codes a partir de texto ou URLs e ajustar o tamanho do QR Code gerado. Ele utiliza a [API de geração de QR Code](https://api.apgy.in/) para criar a imagem QR com base nas entradas do usuário.
+## 📝 #Description
+
+This is a simple web application that allows the user to generate QR Codes from text or URLs and adjust the size of the generated QR Code. It uses the [QR Code Generation API](https://api.apgy.in/) to create the QR image based on user input.
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Technologies Used
 
-- **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **[Vite](https://vitejs.dev/)**: Ferramenta rápida de desenvolvimento para aplicações modernas em frontend.
-- **[TypeScript](https://www.typescriptlang.org/)**: Superconjunto de JavaScript com tipagem estática opcional.
-- **[TailwindCSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização.
-- **[TanStack React Query](https://react-query.tanstack.com/)**: Gerenciamento de estado assíncrono e cache de dados.
-
----
-
-## ⚙️ Requisitos
-
-Antes de começar, você precisará ter instalado:
-
-- **Node.js**: v14+ ou superior
-- **npm** ou **yarn**
+- **[React](https://reactjs.org/)**: JavaScript library for building user interfaces.
+- **[Vite](https://vitejs.dev/)**: Rapid development tool for modern frontend applications.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset of JavaScript with optional static typing.
+- **[TailwindCSS](https://tailwindcss.com/)**: Utility CSS framework for styling.
+- **[TanStack React Query](https://react-query.tanstack.com/)**: Asynchronous state management and data caching.
 
 ---
 
-## 🚀 Instalação e Execução
+## ⚙️ Requirements
 
-1. **Clone este repositório**:
+Before you start, you will need to have installed:
 
-   <!-- ```git clone https://github.com/brendondev/qr.Code``` -->
-
-2. **Navegue até o diretório do projeto**:
-
-   ```cd QR-Code-Generator```
-
-3. **Instale as dependências**:
-
-   ```npm install```
-
-4. **Execute o projeto**:
-
-   ```npm run dev```
-
-5. **Acesse o projeto no navegador**:
-
-  ```http://localhost:5173```
+- **Node.js**: v14+ or higher
+- **npm** or **yarn**
 
 ---
 
-## 🌐 API QR Code
+## 🚀 Installation and Execution
 
-A API utilizada para a geração de QR Codes neste projeto é a **API APGY QR Code**.
+1. **Clone this repository**:
+
+<!-- ```git clone https://github.com/brendondev/qr.Code``` -->
+
+2. **Navigate to the project directory**:
+
+```cd QR-Code-Generator```
+
+3. **Install the dependencies**:
+
+```npm install```
+
+4. **Run the project**:
+
+```npm run dev```
+
+5. **Access the project in the browser**:
+
+```http://localhost:5173```
+
+---
+
+## 🌐 QR Code API
+
+The API used to generate QR Codes in this project is the **APGY QR Code API**.
 
 ### Endpoint
 
 ```GET https://api.apgy.in/qr/?data={data}&size={size}```
 
-### Parâmetros
+### Parameters
 
-- `data` (String): O dado a ser codificado no QR Code. Exemplo: `https://meusite.com`.
-- `size` (Number): O tamanho do QR Code em pixels. Exemplo: `300`.
-
----
-
-## 📸 Exemplos de Uso
-
-Aqui estão alguns exemplos de uso do QR Code Generator:
-
-...
+- `data` (String): The data to be encoded in the QR Code. Example: `https://mysite.com`.
+- `size` (Number): The size of the QR Code in pixels. Example: `300`.
 
 ---
 
-## ✏️ Personalização
+## ✏️ Customization
 
-Alterando o tamanho do QR Code
-Para alterar o tamanho do QR Code gerado, o valor padrão é 300, mas você pode ajustá-lo modificando a lógica no componente QRCodeGenerator.tsx:
+Changing the QR Code Size
+To change the size of the generated QR Code, the default value is 300, but you can adjust it by modifying the logic in the QRCodeGenerator.tsx component:
 
 ```const [size, setSize] = useState<number>(300);```
 
 ---
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Contribuições são sempre bem-vindas! Se você deseja contribuir com melhorias para o projeto, siga estas etapas:
+Contributions are always welcome! If you want to contribute improvements to the project, follow these steps:
 
-1. Faça um fork do projeto
-2. Crie um branch para sua feature (git checkout -b minha-feature)
-3. Faça o commit de suas alterações (git commit -m 'Adiciona minha feature')
-4. Faça o push para o branch (git push origin minha-feature)
-5. Abra um Pull Request
+1. Fork the project
+2. Create a branch for your feature (git checkout -b my-feature)
+3. Commit your changes (git commit -m 'Add my feature')
+4. Push to the branch (git push origin my-feature)
+5. Open a Pull Request
 
 ---
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+This project is licensed under the MIT License. See the LICENSE file for more details.
