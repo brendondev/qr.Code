@@ -1,4 +1,4 @@
-# qr.Code 👨‍💻
+# qr.Code 👨‍💻 
 
 ![image](https://github.com/user-attachments/assets/9d19c94b-55c9-4b0e-8112-350bb6236b2e)
 
